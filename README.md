@@ -59,23 +59,23 @@ Requirements to run the program:
 
 07_09_ASSI_INTERMEDIATE_SQL_2/
 
-│
 
 ├── blob/
 
-│ └── imagenes
+│ └── imagenes/
 
+├── src/
 │ └── insert.py
 
 │ └── update.py
 
-│
+├── sql/
 
-├── /
+│ └── 01_create_tables.sql
 
-│ └── Database.sql
+│ └── 02_create_user_tables.sql
 
-│ └── PrivilegiosUsuarios.sql
+│ └── 03_fill_tables.sql
 
 └── README.md
 
@@ -89,17 +89,20 @@ Requirements to run the program:
 
 The SQL files are located inside the folder.
 
-  
 
-1.  `Database` Creación de la base de datos.
+1.  `01_create_tables.sql` Creation of the database.
 
-  
 
-2.  `PrivilegiosUsuarios.sql` Este script contiene los usuarios
+2.  `02_create_user_tables.sql` This script contains the users
+
+
+3. `03_fill_tables.sql`  This script contains the data that will be in the database.
 
   
 
 ## SRC ##
+
+
 
   
   
