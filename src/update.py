@@ -1,23 +1,12 @@
 import mysql.connector
 
 # Establish a connection to the database
-# db = mysql.connector.connect(
-#   host="172.17.0.2",
-#   user="root",
-#   passwd="root",
-#   database="bikes"
-# )
-
-db_host = 'db'
-db_port = '3307'
-db_name = 'mydatabase'
-db_user = 'myuser'
-db_password = 'mypassword'
-
-cnx = mysql.connector.connect(user=db_user, password=db_password,host=db_host, port=db_port,
-database=db_name)
-
-
+db = mysql.connector.connect(
+  host="172.17.0.2",
+  user="root",
+  passwd="root",
+  database="bikes"
+)
 # Create a cursor object
 cursor = db.cursor()
 
