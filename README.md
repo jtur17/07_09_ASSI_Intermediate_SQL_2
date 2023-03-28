@@ -47,10 +47,11 @@ Requirements to run the program:
 ---
 
 ## Dependencies ##
-
+~~~
 `pip install mariadb`
 
 `pip install psycopg2`
+~~~
 
 ## Estructura del Proyecto##
 
