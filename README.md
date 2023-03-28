@@ -53,7 +53,7 @@ Requirements to run the program:
 `pip install psycopg2`
 ~~~
 
-## Estructura del Proyecto##
+## Estructura del Proyecto ##
 
 ~~~
 
