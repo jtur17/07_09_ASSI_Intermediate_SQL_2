@@ -107,7 +107,7 @@ In this folder are the python files.
 
 1- `insert.py` script is the one that inserts images into the database.
 
-2- `update.py` this file allows us to retrieve the images.
+2- `update.py` this file updates the data.
 
   
   
