@@ -5,23 +5,22 @@ db = mysql.connector.connect(
   host="172.17.0.2",
   user="root",
   passwd="root",
-  database="bikes"
+  database="bike_shop"
 )
 # Create a cursor object
 cursor = db.cursor()
 
-# SQL query to retrieve BLOB data
-query = "SELECT foto FROM bicicletas WHERE id=1"
+
+query = "UPDATE bikes SET price = %s WHERE bike_id = %s"
+val = (700.00, 8)
 
 # Execute the query
-cursor.execute(query)
+cursor.execute(query,val)
 
-# Fetch the BLOB data
-blob_data = cursor.fetchone()[0]
+# Confirmar los cambios 
+db.commit()
 
-# Write the BLOB data to a file
-with open("imagen.jpeg", "wb") as f:
-    f.write(blob_data)
+print(cursor.rowcount,"Updated data")
 
 # Close the database connection
 db.close()
